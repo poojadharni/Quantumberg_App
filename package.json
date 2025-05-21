@@ -1,0 +1,15 @@
+{
+  "name": "quantumberg_app",
+  "version": "1.0.0",
+  "description": "Quantumberg_App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "cd Quantumberg && yarn install",
+    "dev": "cd Quantumberg && yarn dev",
+    "build": "cd Quantumberg && yarn build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
