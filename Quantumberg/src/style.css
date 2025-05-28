@@ -1,0 +1,2185 @@
+:root {
+    /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
+    line-height: 1.5;
+    font-weight: 400;
+  
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+  
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+  }
+  
+  div > ul > li {
+    font-size: 16px;
+  }
+  
+  @font-face {
+    font-family: 'Euclid Circular A';
+  src: url('/euclid-circular-a-cufonfonts/') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  }
+  
+  body {
+    font-family: 'Euclid Circular A', sans-serif;
+  }
+  
+  a {
+    cursor: pointer;
+  }
+  
+  h1 {
+    font-size: 3.2em;
+    line-height: 1.1;
+  }
+  
+  /* button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    transition: border-color 0.25s;
+  }
+  button:hover {
+    border-color: #646cff;
+  }
+  button:focus,
+  button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+  } */
+  
+  /* .card {
+    padding: 2em;
+  } */
+  
+  /* #app {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+  } */
+  
+  
+  @media (prefers-color-scheme: light) {
+    :root {
+      color: #213547;
+      background-color: #fff;
+    }
+    a:hover {
+      color: #747bff;
+    }
+    button {
+      background-color: #f9f9f9;
+    }
+  }
+  .carousel__prev,
+  .carousel__next {
+    outline: none !important;
+    background-color: #FFF !important;
+    border-radius: 50% !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+  }
+  .demo-tabs .el-tabs__nav-wrap {
+    background: rgba(67, 40, 101, 0.03) !important;
+  }
+  /* .demo-tabs .el-tabs__item.is-active {
+    width: 250px;
+    height: 4px;
+    flex-shrink: 0;
+    border-radius: 2px;
+    background: #C04899;
+  } */
+  
+  .demo-tabs .el-tabs__item {
+    color: #432865;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: Euclid Circular A;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    /* height: var(--el-tabs-header-height); */
+    box-sizing: border-box;
+    display: flex;
+    list-style: none; 
+    /* font-size: var(--el-font-size-base);
+    font-weight: 500; */
+    /* color: var(--el-text-color-primary); */
+    position: relative;
+  }
+  .demo-tabs .el-tabs__item.is-active {
+    color: #432865;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: Euclid Circular A;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    /* height: var(--el-tabs-header-height); */
+    box-sizing: border-box;
+    display: flex;
+    list-style: none; 
+    /* font-size: var(--el-font-size-base);
+    font-weight: 500; */
+    /* color: var(--el-text-color-primary); */
+    position: relative;
+    top: 23%;
+  }
+  .demo-tabs .el-tabs__item {
+    color: #825DB0;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: Euclid Circular A;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    /* height: var(--el-tabs-header-height); */
+    box-sizing: border-box;
+    display: flex;
+    list-style: none; 
+    /* font-size: var(--el-font-size-base);
+    font-weight: 500; */
+    /* color: var(--el-text-color-primary); */
+    position: relative;
+    top: 23%;
+  }
+  
+  .demo-tabs .el-tabs__nav {
+    position: relative;
+    left: 10%;
+    height: 60px; /* Set the desired height */
+  }
+  .demo-tabs .el-tabs__active-bar {
+    width: 250px;
+    height: 4px;
+    flex-shrink: 0;
+    border-radius: 2px;
+    background: #C04899;
+  }
+  .el-tabs__nav {
+    overflow-x: auto;
+    white-space: nowrap;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  
+  .el-tabs__nav::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+  
+  .el-tabs__item {
+    display: inline-block;
+    padding: 12px 20px; /* Adjust as needed */
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .el-tabs__nav {
+      padding: 10px; /* Adjust padding for smaller screens */
+    }
+  
+    .el-tabs__item {
+      padding: 8px 12px; /* Adjust padding for smaller screens */
+    }
+  }
+  
+  @media screen and (max-width: 540px){
+    .demo-tabs .el-tabs__item {
+      position: relative;
+      top: 6%;
+    }
+    .demo-tabs .el-tabs__item.is-active {
+      position: relative;
+      top: 6%;
+    }
+    .demo-tabs .el-tabs__nav {
+      position: relative;
+      left: 0%;
+      height: 42px; /* Set the desired height */
+    }
+    .demo-tabs .el-tabs__item {
+      font-size: 18px;
+    }
+    .demo-tabs .el-tabs__item.is-active {
+      font-size: 18px;
+    }
+    .demo-tabs .el-tabs__active-bar {
+      width: 250px;
+      height: 2px;
+      flex-shrink: 0;
+      border-radius: 2px;
+      background: #C04899;
+    }
+  }
+  
+  /* Home Component CSS Code                                       Home Component CSS Code */
+  
+  .help_you {
+    padding-left: 2%;
+  }
+  .home_img_top {
+    padding: 20px 0px;
+  }
+  .home_img_top img {
+    width: 100%;
+    height: 100%;
+  }
+  .home_page {
+    padding-top: 93px;
+  }
+  .top_heading_design .row{
+    padding-left: 10px;
+    padding-right: 60px;
+  }
+  .top_heading_details p {
+    color: rgba(67, 40, 101, 0.55);
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 170%; /* 27.2px */
+  }
+  .top_heading_details h1 {
+    color: #432865;
+    font-family: Euclid Circular A;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 129.3%; /* 82.752px */
+  }
+  .contact_button {
+    padding: 10px 35px;
+    justify-content: center;
+    align-items: center;
+    /* gap: 10px; */
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #FFF;
+    border: 1px solid #943993;
+  }
+  .contact_button:hover {
+    background: var(--main, linear-gradient(105deg, #453D89 4.3%, #C8499A 98.36%));
+    cursor: pointer;
+    color: #fff !important;
+  }
+  .contact_button.active {
+    background: var(--main, linear-gradient(105deg, #453D89 4.3%, #C8499A 98.36%));
+    cursor: pointer;
+    color: #fff !important;
+  }
+  .about_button {
+    cursor: pointer;
+    padding: 10px 35px;
+    margin:10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #FFF;
+    border: 1px solid #943993;
+    /* gap: 10px; */
+  }
+  .about_button:hover {
+    background: var(--main, linear-gradient(105deg, #453D89 4.3%, #C8499A 98.36%));
+    cursor: pointer;
+    color: #fff !important;
+  }
+  .about_button.active {
+    background: var(--main, linear-gradient(105deg, #453D89 4.3%, #C8499A 98.36%));
+    cursor: pointer;
+    color: #fff !important;
+  }
+  .container-fluid.join_with_us {
+    /* background-color: #61408D; */
+    background-image: url('/image/Frame585.png');
+    margin-bottom: 2%;
+    background-repeat: no-repeat;
+  }
+  
+  .background-image {
+    background-image: url('/image/journybackgroundimg.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  .imgABContainer {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  
+  .imgA1 {
+    /* width: 400px; */
+    height: 312px;
+  }
+  
+  .imgB1 {
+    height: 312px;
+  }
+  
+  .imgC1 {
+    position: absolute;
+    height: 312px;
+    left: 0;
+    top: 278.2%;
+  }
+  .container-fluid.join_with_us .join-with-us_details {
+    padding: 80px 160px;
+  }
+  .join_heading_details h2 {
+    color: #FFF;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Euclid Circular A;
+    font-size: 32px;
+    padding-left: 9%;
+    font-style: normal;
+    font-weight: 700;
+  
+  }
+  .join_paragraph_details p {
+    color: #FFF;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Euclid Circular A;
+    font-size: 16px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    
+  }
+  .join_paragraph_details h6 {
+    color: white;
+    padding-top: 2%;
+    /* float: right; */
+    padding-right: 5%;
+    text-align: left;
+  }
+  
+  .join_heading_details h2 {
+    color: #FFF;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Euclid Circular A;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28.5px; /* 142.5% */
+   
+    }
+    .join_heading_details p {
+        font-size: 14px;
+    }
+    .join_heading_details h6 {
+        color: #FFF;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Euclid Circular A;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px; /* 200% */
+        text-decoration-line: underline;
+   
+    }
+  .help_you h2 {
+    color: #000;
+    font-family: Euclid Circular A;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 52px; /* 162.5% */
+    letter-spacing: 0.2px;
+  
+  }
+  .help_you p {
+    color: rgba(0, 0, 0, 0.60);
+    font-family: Euclid Circular A;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px; /* 225% */
+  }
+  .search_box .buttons {
+    width: 144px;
+    height: 62px;
+    padding: 20px 24px;
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+    background: #864391;
+  }
+  
+  .search_box input[type=text] {
+    width: 287px;
+    padding: 20px 18px;
+    align-items: center;
+    border: none;
+    border-radius: 8px;
+    background: #FAFAFA;
+  }
+  
+  .search_box {
+    display: flex;
+    width: 100%;
+    padding-left: 4%;
+  }
+  .accordian_collapse {
+    width: 100%;
+  }
+  .faq p {
+    color: #864391;
+    margin-top: 84px;
+    margin-left: -58%;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Euclid Circular A;
+    font-size: 20px;
+    font-style: normal;
+    float: left;
+    font-weight: 600;
+    line-height: 24px; /* 120% */
+    text-decoration-line: underline;
+   
+  }
+  .accordion .card-header:after {
+    font-family: 'FontAwesome';  
+    content: "\f068";
+    float: right; 
+  }
+  .accordion .card-header.collapsed:after {
+    content: "\f067"; 
+  }
+  .card-header { 
+    background-color: white;
+  }
+  .card-title {
+    color: #000;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Euclid Circular A;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px; /* 180% */
+  }
+  .arrow1 {
+  animation: slide1 1s ease-in-out infinite;
+  margin-left: 9px;
+  }
+  @keyframes slide1 {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  
+  50% {
+    transform: translate(10px, 0);
+  }
+  }
+  .help_you_row {
+    padding: 0px 30px;
+  }
+  @media screen and (max-width: 1024px) {
+    .container-fluid.join_with_us .join-with-us_details {
+        padding: 50px 70px;
+    }
+    input[type=text] {
+        width: 250px;
+    }
+    .top_heading_details h1 {
+        font-size: 55px;
+    }
+    
+  }
+  @media screen and (min-width: 700px) and (max-width: 920px) {
+    .container-fluid.join_with_us .join-with-us_details {
+        padding: 50px 70px;
+    }
+  
+  
+  }
+  @media screen and (min-width: 600px) and (max-width: 820px) {
+    .container-fluid.join_with_us {
+        background-color: #61408D;
+        background-image: none;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 85%;
+    }
+    .container-fluid.join_with_us .join-with-us_details {
+        padding: 20px 10px;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .join_heading_details h2 {
+        color: #FFF;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Euclid Circular A;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 28.5px; /* 142.5% */
+  
+    }
+    .container-fluid.join_with_us {
+        background-color: #61408D;
+        background-image: none;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 85%;
+    }
+    .join_paragraph_details p {
+        color: #FFF;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Euclid Circular A;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px; /* 180% */
+    }
+    .help_you_row {
+        padding: 0px 5px;
+        margin: 0rem;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .card-title {
+        color: #442060;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Euclid Circular A;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 36px; /* 257.143% */
+    }
+    .help_you h2 {
+        color: #442060;
+        font-family: Euclid Circular A;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 52px; /* 260% */
+        letter-spacing: 0.2px;
+  
+    }
+    .help_you p {
+        color: #7855A5;
+        font-family: Euclid Circular A;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18.5px; /* 154.167% */
+    }
+  }
+  
+  
+  
+  @media screen and (max-width: 540px) {
+    .container-fluid.join_with_us .join-with-us_details {
+    /* padding-left: 80px;
+    padding-right: 50px; */
+    padding: 22px 2px;
+  }
+  .search_box {
+    flex-direction: column;
+    padding-left: 3%;
+    padding-right: 3%
+  }
+  .search_box input[type=text] {
+    width: 100%;
+  }
+  .search_box .buttons {
+    width: 100%;
+  }
+  }
+  @media screen and (max-width: 480px){
+    .container-fluid.join_with_us .join-with-us_details {
+    /* padding-left: 80px;
+    padding-right: 50px; */
+    padding: 22px 2px;
+  }
+    .top_heading_details h1 {
+        font-size: 32px;
+    }
+    .top_heading_details p {
+        color: #7855A5;
+        font-family: Euclid Circular A;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 170%; /* 23.8px */
+    }
+  }
+  
+  @media  screen and (max-width: 450px) {
+    .help_you {
+        padding-left: 5%;
+    }
+  }
+  @media screen and (min-width: 410px) and (max-width: 440px){
+    .container-fluid.join_with_us .join-with-us_details {
+    /* padding-left: 80px;
+    padding-right: 50px; */
+    padding: 22px 2px;
+  }
+    .help_you {
+        padding-left: 12px;
+    }
+    .how_can_help {
+        padding: 0px;
+    }
+    .top_heading_design .row{
+        padding-left: 0px;
+    }
+    .top_heading_details h1 {
+        font-size: 32px;
+    }
+    .home_buttons .about_button {
+        float: right;
+        width: 47%;
+    }
+    .home_buttons .contact_button {
+        float: left;
+        
+    }
+    .contact_button {
+        padding: 10px 30px;
+        justify-content: center;
+        align-items: center;
+    }
+    .about_button {
+        padding: 10px 15px;
+        justify-content: center;
+        align-items: center;
+    }
+    .help_you h2 {
+        font-size: 28px;
+    }
+    .help_you p {
+        font-size: 14px;
+    }
+    .accordian_collapse {
+        margin-top: 19px;
+    }
+  }
+  
+  @media screen and (min-width: 360px) and (max-width: 410px){
+  
+  .container-fluid.join_with_us .join-with-us_details {
+    /* padding-left: 80px;
+    padding-right: 50px; */
+    padding: 22px 2px;
+  }
+  
+  
+    .how_can_help {
+        padding: 0px;
+    }
+    .home_buttons .about_button {
+        float: right;
+        width: 50%;
+    }
+    .home_buttons .contact_button {
+        float: left;
+        
+    }
+    .top_heading_details h1 {
+        font-size: 32px;
+    }
+    .contact_button {
+        padding: 10px 15px;
+        justify-content: center;
+        align-items: center;
+    }
+    .about_button {
+        padding: 10px 15px;
+        justify-content: center;
+        align-items: center;
+    }
+  }
+  
+  @media screen and (min-width: 320px) and (max-width: 360px){
+  .container-fluid.join_with_us .join-with-us_details {
+    /* padding-left: 80px;
+    padding-right: 50px; */
+    padding: 22px 2px;
+  }
+  
+    .how_can_help {
+        padding: 0px;
+    }
+    .home_buttons .about_button {
+        float: right;
+        width: 50%;
+    }
+    .top_heading_details h1 {
+        font-size: 32px;
+    }
+    .home_buttons .contact_button {
+        float: left;
+        
+    }
+    .contact_button {
+        padding: 10px 14px;
+        justify-content: center;
+        align-items: center;
+    }
+    .about_button {
+        padding: 10px 14px;
+        justify-content: center;
+        align-items: center;
+    }
+  }
+  @media only screen and (min-width: 280px) and (max-width: 320px){
+  .container-fluid.join_with_us .join-with-us_details {
+    /* padding-left: 80px;
+    padding-right: 50px; */
+    padding: 22px 2px;
+  }
+  
+    .home_buttons .about_button {
+        float: right;
+        width: 50%;
+    }
+    .top_heading_details h1 {
+        font-size: 32px;
+    }
+    .home_buttons .contact_button {
+        float: left;
+        
+    }
+    .contact_button {
+        padding: 10px 5px;
+        justify-content: center;
+        align-items: center;
+    }
+    .about_button {
+        padding: 10px 12px;
+        justify-content: center;
+        align-items: center;
+    }
+  }
+    
+  @media screen and (max-width: 280px){
+    
+    .home_buttons .about_button {
+        float: right;
+        margin-top: -9%;
+        width: 100%;
+    }
+    .top_heading_details h1 {
+        font-size: 32px;
+    }
+    .home_buttons .contact_button {
+        float: left;
+        width: 100%;
+        
+    }
+    .contact_button {
+        padding: 10px 5px !important;
+        justify-content: center;
+        align-items: center;
+    }
+    .about_button {
+        padding: 10px 12px;
+        justify-content: center;
+        align-items: center;
+    }
+  }
+  
+  /* Our Services Component CSS                                           Our Services Component CSS */
+  
+  
+  /* Our Solution We DEliver CSS                                       Our Solution WE DEliver CSS */
+  
+  /* .solution_we_deliver {
+    padding-left: 0px;
+  } */
+    
+  .solution_web_box img {
+    height: 40%;
+    margin-bottom: 18%;
+  }
+  .solution_web_box1 img {
+    height: 40%;
+    margin-bottom: 18%;
+  }
+  .solution_we_deliverdetails p {
+    color: #9889AA;
+    font-family: Euclid Circular A;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    /* line-height: 20%;  */
+  }
+  .solution_we_deliverdetails h2 {
+    color: #332140;
+    padding-top: 3%;
+    font-variant-numeric: lining-nums proportional-nums;
+    /* font-family: Euclid Circular A; */
+    font-family: 'Euclid Circular A Bold', sans-serif !important;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    /* line-height: 83.984px;  */
+  }
+  .solution_web_box {
+    /* display: flex; */
+    height: 180px;
+    width: 170px;
+    padding: 40px 40px;
+    /* flex-direction: column; */
+    align-items: center;
+    gap: 74px;
+    border-radius: 16px;
+    background: #6A3894;
+    margin-bottom: 3%;
+  }
+  .solution_web .row {
+    /* display: flex; */
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* margin-left: 0px; */
+    margin-right: 0px;
+    padding: 0px 14px;
+  }
+  .solution_web_box h5 {
+    color: #FFF;
+    text-align: center;
+    /* font-family: Euclid Circular A; */
+    font-family: 'Euclid Circular A Bold', sans-serif !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .solution_web_box1 {
+    /* display: flex; */
+    height: 180px;
+    width: 170px;
+    padding: 40px 40px;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    border-radius: 16px;
+    background: #C04899;
+    margin-bottom: 3%;
+  }
+  
+  .solution_web_box1 h5 {
+    color: #FFF;
+    text-align: center;
+    /* font-family: Euclid Circular A; */
+    font-family: 'Euclid Circular A Bold', sans-serif !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .slider {
+  overflow: hidden;
+  position: relative;
+  }
+  
+  /* Styles for the slide track */
+  .slide-track {
+  display: flex;
+  animation: slide  40s linear infinite; /* Adjust the duration as needed */
+  }
+  
+  /* Styles for each slide */
+  .slide {
+  flex: 0 0 20%; /* Each slide takes 20% width to display five cards per page */
+  text-align: center;
+  padding: 20px;
+  }
+  
+  /* Keyframe animation for sliding effect */
+  @keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(calc(-250px * 5));
+  }
+  }
+  
+  
+  /* Pause animation on hover */
+  .slider:hover .slide-track {
+  animation-play-state: paused;
+  }
+  @media screen and (max-width: 750px) {
+  .slide {
+    flex: 0 0 100%; /* Each slide takes 100% width on smaller screens */
+  }
+  }
+  @media screen and (max-width: 550px) {
+    .slide {
+        flex: 0 0 0%; /* Each slide takes 100% width on smaller screens */
+    }
+  }
+  @media screen and (max-width: 420px){
+    .solution_we_deliver {
+        padding-left: 16px;
+        padding-top: 20px;
+        padding-right: 16px;
+    }
+    .solution_we_deliverdetails h2{
+        color: #432865;
+        font-variant-numeric: lining-nums proportional-nums;
+        /* font-family: Euclid Circular A; */
+        font-family: 'Euclid Circular A Bold', sans-serif !important;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        
+    }
+    .solution_we_deliverdetails p {
+        color: #7855A5;
+        /* font-family: Euclid Circular A; */
+        font-family: 'Euclid Circular A Bold', sans-serif !important;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 170%; /* 23.8px */
+    }
+  }
+  
+  /* Why Choose Us Css Code                                           Why Choose Us Css Code */
+  
+  .why_to_choose {
+    padding-left: 10px;
+  }
+  .choose_us_details h2 {
+    color: #432865;
+    font-variant-numeric: lining-nums proportional-nums;
+    /* font-family: Euclid Circular A; */
+    font-family: 'Euclid Circular A Bold', sans-serif !important;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+  }    
+  .choose_us_details p {
+    color: #625484;
+    /* font-family: Euclid Circular A; */
+    font-family: 'Euclid Circular A Bold', sans-serif !important;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 170%; /* 27.2px */
+   
+  }
+  .service_details h1 {
+    color: #C14899;
+    /* text-align: center; */
+    font-variant-numeric: lining-nums proportional-nums;
+    /* font-family: Euclid Circular A; */
+    font-family: 'Euclid Circular A Bold', sans-serif !important;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 63.984px; /* 99.975% */
+  }
+  .service_details1 h1 {
+    color: #C14899;
+    /* text-align: center; */
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: Euclid Circular A;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 63.984px; /* 99.975% */
+  }
+  .service_details2 h1 {
+    color: #C14899;
+    /* text-align: center; */
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: Euclid Circular A;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 63.984px; /* 99.975% */
+  }
+  .service_details1 .card {
+    border: none;
+    padding-right: 5%;
+  }
+  .service_details .card {
+    border: none;
+    border-left: 1px solid #BCBCBC;;
+    padding-left: 47px;
+  }
+  .service_details2 .card {
+    border: none;
+    border-left: 1px solid #BCBCBC;;
+    padding-left: 47px;
+  }
+  @media screen and (max-width: 420px) {
+    .why_to_choose {
+        padding-left: 0px;
+    }
+    .choose_us_details {
+        padding-left: 4%;
+        padding-right: 16px;
+    }
+    .choose_us_details h2 {
+        font-size: 28px;
+    }
+    .choose_us_details p  {
+        font-size: 14px;
+    }
+    .service_details h1 {
+        font-size: 45px;
+    }
+    .service_details1 h1 {
+        font-size: 45px;
+    }
+    .service_details2 h1 {
+        font-size: 45px;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .choose_us_details h2 {
+        color: #432865;
+        font-variant-numeric: lining-nums proportional-nums;
+        /* font-family: Euclid Circular A; */
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 63.984px; /* 266.6% */
+    }
+    .service_details h1 {
+        color: #C14899;
+        font-variant-numeric: lining-nums proportional-nums;
+        /* font-family: Euclid Circular A; */
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 63.984px; /* 99.975% */
+    }
+    .service_details1 h1 {
+        color: #C14899;
+        
+        font-variant-numeric: lining-nums proportional-nums;
+        /* font-family: Euclid Circular A; */
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 63.984px; /* 99.975% */
+    }
+    .service_details2 h1 {
+        color: #C14899;
+        font-variant-numeric: lining-nums proportional-nums;
+        /* font-family: Euclid Circular A; */
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 63.984px; /* 99.975% */
+    }
+    .service_details h2 {
+        color: #332142;
+        /* font-family: Euclid Circular A; */
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+  
+    }
+    .service_details1 h2 {
+        color: #332142;
+        /* font-family: Euclid Circular A; */
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+   
+    }
+    .service_details2 h2 {
+        color: #332142;
+        /* font-family: Euclid Circular A; */
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+  
+    }
+    .service_details p {
+        color: #7855A5;
+        /* font-family: Euclid Circular A; */
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22.5px; /* 160.714% */
+    }
+    .service_details1 p {
+        color: #7855A5;
+        /* font-family: Euclid Circular A; */
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22.5px; /* 160.714% */
+    }
+    .service_details2 p {
+        color: #7855A5;
+        /* font-family: Euclid Circular A; */
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22.5px; /* 160.714% */
+    }
+    .service_details .card {
+        border: none;
+        border-bottom: 1px solid #B04797;
+        padding-left: 0px;
+    }
+    .service_details1 .card {
+        border: none;
+        border-bottom: 1px solid #B04797;
+        padding-left: 0px;
+    }
+    .service_details2 .card {
+        border: none;
+        padding-left: 0px;
+    }
+  }
+  
+  @media screen and (max-width:912px){
+    .service_details .card {
+        padding-left: 13px;
+    }
+    .service_details1 .card {
+        padding-left: 13px;
+    }
+    .service_details2 .card {
+        padding-left: 13px;
+    }
+  }
+  .service_details h2 {
+    color: #332142;
+    font-family: Euclid Circular A;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  
+  }
+  .service_details p {
+    color: #6B517E;
+    font-family: Euclid Circular A;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 175% */
+  }
+  .service_details1 h2 {
+    color: #332142;
+    font-family: Euclid Circular A;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  
+  }
+  .service_details1 p {
+    color: #6B517E;
+    font-family: Euclid Circular A;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 175% */
+  }
+  .service_details2 h2 {
+    color: #332142;
+    font-family: Euclid Circular A;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  
+  }
+  .service_details2 p {
+    color: #6B517E;
+    font-family: Euclid Circular A;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 175% */
+  }
+  
+  
+  /* Our Technologies CSS Code                                               Our Technologies CSS Code */
+  
+  .technologicals {
+    padding-left: 25px;
+  }
+  
+  .technological h2 {
+    color: #332140;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: Euclid Circular A;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+  
+  }
+  .technological p {
+    color: #795C8F;
+    font-family: Euclid Circular A;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 204.416%; /* 32.707px */
+   
+  }
+  .languages_details h4 {
+    color: #442060;
+    text-align: center;
+    font-family: Euclid Circular A;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 33.5px; /* 167.5% */
+   
+  }
+  @media screen and (max-width: 420px){
+    .technologicals {
+        padding-left: 16px;
+        padding-top: 20px;
+    }
+    .technological h2 {
+        color: #442060;
+        font-variant-numeric: lining-nums proportional-nums;
+        font-family: Euclid Circular A;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32.484px; /* 135.35% */
+   
+    }
+    .technological p {
+        color: #805FAA;
+        font-family: Euclid Circular A;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 200%; /* 28px */
+  
+    }
+    .languages_details h4 {
+        color: #442060;
+        text-align: center;
+        font-family: Euclid Circular A;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 33.5px; /* 167.5% */
+   
+    }
+  }
+  .langunages_card {
+    width: 90%;
+    height: 100%;
+    border-radius: 16px;
+    background: #FFF;
+    box-shadow: 0px 4px 31px 0px rgba(182, 182, 182, 0.25);
+  }
+  .padding_icons {
+    padding: 15px 0px;
+    padding-left: 12px;
+  }
+  @media screen and (max-width: 600px) {
+    .langunages_card {
+        width: 100%;
+        height: 100%;
+    }
+    .padding_icons {
+        padding: 15px 0px;
+    }
+  }
+  @media screen and (max-width: 920px) {
+    .padding_icons {
+        padding: 15px 0px;
+    }
+  }
+  @media screen and (max-width: 540px) {
+    .padding_icons {
+        padding-left: 10px;
+    }
+  }
+  @media screen and (max-width: 460px) {
+    .padding_icons {
+        padding-left: 3px;
+    }
+  }
+  @media screen and (max-width: 390px) {
+    .padding_icons {
+        padding-left: 10px;
+    }
+  }
+  
+  /* ClientsAbout Component CSS Code                                 ClientsAbout Component CSS Code                               */
+  
+  .client_col {
+    padding-left: 32px;
+  }
+  .clients_padding_top {
+    padding-top: 3%;
+  }
+  .clients h2 {
+    color: #442060;
+    font-family: Euclid Circular A;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130.3%; /* 41.696px */
+   
+  }
+  .clients p {
+    color: #706969;
+    font-family: Euclid Circular A;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 204.416%; /* 32.707px */
+   
+  }
+  .title_engineer {
+    color: #442060;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px; /* 90% */
+  }
+  .text_engineer {
+    color: #7D6C6C;
+    text-align: center;
+    font-family: Euclid Circular A;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 170%; /* 27.2px */
+  }
+  .card-img-top {
+    width: 109px;
+    height: 109px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .clients_card {
+    border-radius: 16px;
+    background: #FFF;
+    box-shadow: 0px 4px 20px 0px rgba(182, 182, 182, 0.25);
+    width: 20rem; 
+    height: 32rem;
+  }
+  .card-body h6 {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  @media screen and (min-width: 1000px) and (max-width: 1024px) {
+    .clients_card {
+        width: 18rem;
+        height: 34rem;
+    }
+  }
+  @media screen and (max-width: 420px) {
+    .clients_card {
+        height: 29rem;
+    }
+    .client_col {
+        padding-left: 15px;
+    }
+    .clients h2 {
+        color: #442060;
+        font-family: Euclid Circular A;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 130.3%; /* 26.06px */
+   
+    }
+    .clients p {
+        color: #7855A5;
+        font-family: Euclid Circular A;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 204.416%; /* 28.618px */
+   
+    }
+    .title_engineer  {
+        color: #442060;
+        text-align: center;
+        font-family: Euclid Circular A;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 26.5px; /* 165.625% */
+    }
+    .text_engineer {
+        color: #7855A5;
+        text-align: center;
+        font-family: Euclid Circular A;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 170%; /* 23.8px */
+    }
+    .clients {
+        padding-left: 16px;
+    }
+  }
+  
+  /* Services Component Code CSS                                       Services Component Code CSS */
+  
+  
+  /* Software Developement CSS code                                      Software Developement CSS code */
+  
+  .img_logos {
+    width: 354px;
+    height: 244px;
+  }
+  .img_logos1 {
+    width: 354px;
+    height: 244px;
+  }
+  .software_develop p {
+  color: #7855A5;
+  text-align: center;
+  font-family: Euclid Circular A;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  
+  }
+  .software_develop h1 {
+  color: #432865;
+  text-align: center;
+  font-family: Euclid Circular A;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  
+  }
+  small {
+  color: #B34797;
+  font-family: Euclid Circular A;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  }
+  .software_develop_details h2{
+    color: #442060;
+    font-family: Euclid Circular A;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  
+  }
+  .software_develop_details p {
+    color: #7855A5;
+    font-family: Euclid Circular A;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 164.5%; /* 26.32px */
+  }
+  .software_develop_details1 h2{
+    color: #442060;
+    font-family: Euclid Circular A;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  
+  }
+  .software_develop_details1 p {
+    color: #7855A5;
+    font-family: Euclid Circular A;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 164.5%; /* 26.32px */
+  }
+  .softwaredetails_design {
+  padding-left: 50px;
+  margin-top: 3%;
+  }
+  .softwaredetails_design1 {
+  padding-right: 115px;
+  margin-top: 3%;
+  padding-left: 50px;
+  }
+  
+  @media screen and (max-width: 1000px) {
+  .softwaredetails_design {
+    padding-left: 0px;
+    margin-top: 3%;
+    padding-right: 0px;
+  }
+  .softwaredetails_design1 {
+    padding-right: 0px;
+    margin-top: 3%;
+    padding-left: 0px;
+  }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .image_first_row {
+        padding-left: 73px;
+    }
+    .software_develop_details1 h2 {
+        font-size: 24px;
+    }.software_develop_details1 p {
+        font-size: 14px;
+    }
+    .img_logos1 {
+        width: 315px;
+    }
+    .software_develop_details h2 {
+        font-size: 24px;
+        
+    }.software_develop_details p {
+        font-size: 16px;
+    }
+  }
+  @media screen and (max-width: 912px) {
+    .software_develop h1 {
+        font-size: 24px;
+    }
+    .software_develop_details h2 {
+        font-size: 28px;
+    }
+    .software_develop_details p {
+        font-size: 14px;
+    }
+    .software_develop p {
+        font-size: 14px;
+    }
+    
+  }
+  
+  @media screen and (max-width: 576px) {
+  .softwaredetails_design {
+    padding: 0rem;
+    margin: 0rem;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .img_logos {
+    width: 304px;
+    height: 212px;
+    /* width: 280px;
+    height: 244px; */
+  }
+  .img_logos1 {
+    width: 304px;
+    height: 212px;
+    margin-left: -15px;
+  }
+  
+  .software_develop h1 {
+    color: #432865;
+    font-family: Euclid Circular A;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 129.3%; /* 31.032px */
+    text-align: left;
+  }
+  .software_develop p {
+    color: #7855A5;
+    font-family: Euclid Circular A;
+    font-size: 14px;
+    text-align: left;
+    font-style: normal;
+    font-weight: 400;
+  
+  }
+  .software_develop_details1 h2 {
+    color: #442060;
+    font-family: Euclid Circular A;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: -14px;
+  }.software_develop_details1 p {
+    color: #7855A5;
+    font-family: Euclid Circular A;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 164.5%; /* 23.03px */
+    margin-left: -14px;
+  }
+  .software_develop_details h2 {
+    color: #442060;
+    font-family: Euclid Circular A;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  
+  }.software_develop_details p {
+    color: #7855A5;
+    font-family: Euclid Circular A;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 164.5%; /* 23.03px */
+  }
+  }
+  @media screen and (max-width: 340px) {
+  .softwaredetails_design {
+    padding: 0rem;
+    margin: 0rem;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .img_logos {
+    width: 280px;
+    height: 244px;
+  }
+  .img_logos1 {
+    width: 280px;
+    height: 244px;
+    margin-left: -15px;
+  }
+  
+  .software_develop h1 {
+    font-size: 20px;
+    text-align: left;
+  }
+  .software_develop p {
+    font-size: 14px;
+    text-align: left;
+  }
+  .container {
+    padding-left: 0px !important;
+  }
+  .software_develop_details1 h2 {
+    font-size: 20px;
+    margin-left: -14px;
+  }.software_develop_details1 p {
+    font-size: 14px;
+    margin-left: -14px;
+  }
+  .software_develop_details h2 {
+    font-size: 20px;
+  }.software_develop_details p {
+    font-size: 14px;
+  }
+  }
+  @media screen and (max-width: 280px) {
+    .img_logos1 {
+        width: 250px;
+        height: 244px;
+        margin-left: -15px;
+    }
+    .img_logos {
+        width: 250px;
+        height: 244px;
+        margin-left: -15px;
+    }
+  }
+  
+  
+  /* WebDesign Page Componnet CSS                                       WebDesign Page Component CSS */
+  
+  .img_logos {
+    width: 354px;
+    height: 244px;
+  }
+  .img_logos1 {
+    width: 354px;
+    height: 244px;
+  }
+  .webdesign_service p {
+  color: #7855A5;
+  text-align: center;
+  font-family: Euclid Circular A;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  
+  }
+  .webdesign_service h1 {
+  color: #432865;
+  text-align: center;
+  font-family: Euclid Circular A;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  
+  }
+  small {
+  color: #B34797;
+  font-family: Euclid Circular A;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  }
+  .webdesign_service_details h2{
+  color: #442060;
+  font-family: Euclid Circular A;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  
+  }
+  .webdesign_service_details p {
+  color: #7855A5;
+  font-family: Euclid Circular A;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 164.5%; /* 26.32px */
+  }
+  .webdesign_service_details1 h2{
+  color: #442060;
+  font-family: Euclid Circular A;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  
+  }
+  .webdesign_service_details1 p {
+  color: #7855A5;
+  font-family: Euclid Circular A;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 164.5%; /* 26.32px */
+  }
+  .webdesigndetails_design {
+  padding-left: 50px;
+  margin-top: 3%;
+  }
+  .webdesigndetails_design1 {
+  padding-right: 115px;
+  margin-top: 3%;
+  padding-left: 50px;
+  }
+  @media screen and (max-width: 1000px) {
+  .webdesigndetails_design {
+    padding-left: 0px;
+    margin-top: 3%;
+  }
+  .webdesigndetails_design1 {
+    padding-right: 0px;
+    margin-top: 3%;
+    padding-left: 0px;
+  }
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .image_first_row {
+        padding-left: 73px;
+    }
+    .webdesign_service_details1 h2 {
+        font-size: 24px;
+    }.webdesign_service_details1 p {
+        font-size: 14px;
+    }
+    .img_logos1 {
+        width: 315px;
+    }
+    .webdesign_service_details h2 {
+        font-size: 24px;
+        
+    }.webdesign_service_details p {
+        font-size: 16px;
+    }
+  }
+  @media screen and (max-width: 912px) {
+    .webdesign_service h1 {
+        font-size: 24px;
+    }
+    .webdesign_service_details h2 {
+        font-size: 28px;
+    }
+    .webdesign_service_details p {
+        font-size: 14px;
+    }
+    .webdesign_service p {
+        font-size: 14px;
+    }
+    
+  }
+  @media screen and (max-width: 576px) {
+  .webdesigndetails_design {
+    padding: 0rem;
+    margin: 0rem;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .img_logos {
+    width: 304px;
+    height: 212px;
+  }
+  .img_logos1 {
+    width: 304px;
+    height: 212px;
+    margin-left: -15px;
+  }
+  
+  .webdesign_service h1 {
+    color: #432865;
+    font-family: Euclid Circular A;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 129.3%; /* 31.032px */
+    text-align: left;
+  }
+  .webdesign_service p {
+    color: #7855A5;
+    font-family: Euclid Circular A;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 170%; /* 23.8px */
+   
+    text-align: left;
+  }
+  .webdesign_service_details1 h2 {
+    color: #442060;
+    font-family: Euclid Circular A;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  
+    margin-left: -14px;
+  }.webdesign_service_details1 p {
+    color: #7855A5;
+    font-family: Euclid Circular A;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 164.5%; /* 23.03px */
+    margin-left: -14px;
+  }
+  .webdesign_service_details h2 {
+    color: #442060;
+    font-family: Euclid Circular A;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  
+  }.webdesign_service_details p {
+    color: #7855A5;
+    font-family: Euclid Circular A;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 164.5%; /* 23.03px */
+  }
+  }
+  @media screen and (max-width: 340px) {
+  .webdesigndetails_design {
+    padding: 0rem;
+    margin: 0rem;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .img_logos {
+    width: 280px;
+    height: 244px;
+  }
+  .img_logos1 {
+    width: 280px;
+    height: 244px;
+    margin-left: -15px;
+  }
+  
+  .webdesign_service h1 {
+    font-size: 20px;
+    text-align: left;
+  }
+  .webdesign_service p {
+    font-size: 14px;
+    text-align: left;
+  }
+  .container {
+    padding-left: 0px !important;
+  }
+  .webdesign_service_details1 h2 {
+    font-size: 20px;
+    margin-left: -14px;
+  }.webdesign_service_details1 p {
+    font-size: 14px;
+    margin-left: -14px;
+  }
+  .webdesign_service_details h2 {
+    font-size: 20px;
+  }.webdesign_service_details p {
+    font-size: 14px;
+  }
+  }
+  @media screen and (max-width: 280px) {
+    .img_logos1 {
+        width: 250px;
+        height: 244px;
+        margin-left: -15px;
+    }
+    .img_logos {
+        width: 250px;
+        height: 244px;
+        margin-left: -15px;
+    }
+  }
+  
+  /* Digital Marketing Component CSS                                             Digital Marketing Component CSS */
+  
+  .img_logos {
+    width: 354px;
+    height: 244px;
+  }
+  .digitalmarketing_service p {
+    color: #7855A5;
+    text-align: center;
+    font-family: Euclid Circular A;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+  
+  }
+  .digitalmarketing_service h1 {
+    color: #432865;;
+    text-align: center;
+    font-family: Euclid Circular A;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+  
+  }
+  small {
+    color: #B34797;
+    font-family: Euclid Circular A;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+  }
+  .digitalmarketing_service_details h2{
+    color: #442060;
+    font-family: Euclid Circular A;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  
+  }
+  .digitalmarketing_service_details p {
+    color: #7855A5;
+    font-family: Euclid Circular A;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 164.5%; /* 26.32px */
+  }
+  .digitalmarketing_service_details1 h2{
+    color: #442060;
+    font-family: Euclid Circular A;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .digitalmarketing_service_details1 p {
+    color: #7855A5;
+    font-family: Euclid Circular A;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 164.5%; /* 26.32px */
+  }
+  .digitalmarketingdetails_design {
+  padding-left: 50px;
+  margin-top: 3%;
+  }
+  .digitalmarketingdetails_design1 {
+  padding-right: 115px;
+  margin-top: 3%;
+  padding-left: 50px;
+  }
+  @media screen and (max-width: 1000px) {
+  .digitalmarketingdetails_design {
+    padding-left: 0px;
+    margin-top: 3%;
+  }
+  .digitalmarketingdetails_design1 {
+    padding-right: 0px;
+    margin-top: 3%;
+    padding-left: 0px;
+  }
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .image_first_row {
+        padding-left: 73px;
+    }
+    .digitalmarketing_service_details1 h2 {
+        font-size: 24px;
+    }.digitalmarketing_service_details1 p {
+        font-size: 14px;
+    }
+    .img_logos1 {
+        width: 315px;
+    }
+    .digitalmarketing_service_details h2 {
+        font-size: 24px;
+        
+    }.digitalmarketing_service_details p {
+        font-size: 16px;
+    }
+  }
+  @media screen and (max-width: 912px) {
+    .digitalmarketing_service h1 {
+        font-size: 24px;
+    }
+    .digitalmarketing_service_details h2 {
+        font-size: 28px;
+    }
+    .digitalmarketing_service_details p {
+        font-size: 14px;
+    }
+    .digitalmarketing_service p {
+        font-size: 14px;
+    }
+    
+  }
+  @media screen and (max-width: 576px) {
+  .digitalmarketingdetails_design {
+    padding: 0rem;
+    margin: 0rem;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .img_logos {
+    width: 304px;
+    height: 212px;
+  }
+  .img_logos1 {
+    width: 304px;
+    height: 212px;
+    margin-left: -15px;
+  }
+  
+  .digitalmarketing_service h1 {
+    color: #442060;
+    font-family: Euclid Circular A;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 129.3%; /* 31.032px */
+    text-align: left;
+  }
+  .digitalmarketing_service p {
+    color: #7855A5;
+    font-family: Euclid Circular A;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 170%; /* 23.8px */
+  
+    text-align: left;
+  }
+  .digitalmarketing_service_details1 h2 {
+    color: #442060;
+    font-family: Euclid Circular A;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  
+    margin-left: -14px;
+  }.digitalmarketing_service_details1 p {
+    color: #7855A5;
+    font-family: Euclid Circular A;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 164.5%; /* 23.03px */
+    margin-left: -14px;
+  }
+  .digitalmarketing_service_details h2 {
+    color: #442060;
+    font-family: Euclid Circular A;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  
+  }.digitalmarketing_service_details p {
+    color: #7855A5;
+    font-family: Euclid Circular A;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 164.5%; /* 23.03px */
+  }
+  }
+  @media screen and (max-width: 340px) {
+  .digitalmarketingdetails_design {
+    padding: 0rem;
+    margin: 0rem;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .img_logos {
+    width: 280px;
+    height: 244px;
+  }
+  .img_logos1 {
+    width: 280px;
+    height: 244px;
+    margin-left: -15px;
+  }
+  
+  .digitalmarketing_service h1 {
+    font-size: 20px;
+    text-align: left;
+  }
+  .digitalmarketing_service p {
+    font-size: 14px;
+    text-align: left;
+  }
+  .container {
+    padding-left: 0px !important;
+  }
+  .digitalmarketing_service_details1 h2 {
+    font-size: 20px;
+    margin-left: -14px;
+  }.digitalmarketing_service_details1 p {
+    font-size: 14px;
+    margin-left: -14px;
+  }
+  .digitalmarketing_service_details h2 {
+    font-size: 20px;
+  }.digitalmarketing_service_details p {
+    font-size: 14px;
+  }
+  }
+  @media screen and (max-width: 280px) {
+    .img_logos1 {
+        width: 250px;
+        height: 244px;
+        margin-left: -15px;
+    }
+    .img_logos {
+        width: 250px;
+        height: 244px;
+        margin-left: -15px;
+    }
+  }
+  
