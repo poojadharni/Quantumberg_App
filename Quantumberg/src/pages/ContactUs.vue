@@ -1,121 +1,114 @@
 <template>
-    <div class="container-fluid contact_us_page">
-        <div class="container">
-            <div class="contact_details mt-2">
-                <h5 style="font-family:'Euclid Circular A Bold', sans-serif !important;color:#432865;font-weight: 600">
-                    Contact Us</h5>
-                <p style="color:#7855A5">Leave an inquiry or contact us via email and phone. We will contact you within
-                    24 hours during work days.</p>
-            </div>
-            <div class="row">
-                <div class="col-sm-12 contact-box">
-                    <div class="card ss">
-                        <div class="row contactdetails_design">
-                            <div class="col-sm-6 col-lg-5 contact_inform">
-                                <div class="contact_information">
-                                    <h2 style="font-size:20px;font-weight: 500;" class="mt-0"><b>Contact Information</b>
-                                    </h2>
-                                    <div class="contact_address_information">
-                                        <a href="tel:+91 9380967693" style="text-decoration: none;">
-                                            <div class="row details_designs_dir">
-                                                <div class="col-sm-2 details_left_side">
-                                                    <p><i class="fa fa-phone"></i></p>
-                                                </div>
-                                                <div class="col-sm-10 details_right_side">
-                                                    <p>+919108728053</p>
-                                                </div>
+<div class="container-fluid contact_us_page">
+    <div class="container">
+        <div class="contact_details mt-2">
+            <h5 style="font-family:'Euclid Circular A Bold', sans-serif !important;color:#432865;font-weight: 600">
+                Contact Us</h5>
+            <p style="color:#7855A5">Leave an inquiry or contact us via email and phone. We will contact you within
+                24 hours during work days.</p>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 contact-box mt-3">
+                <div class="card ss">
+                    <div class="row contactdetails_design">
+                        <div class="col-sm-6 col-lg-5 contact_inform">
+                            <div class="contact_information">
+                                <h2 style="font-size:20px;font-weight: 500;" class="mt-0"><b>Contact Information</b>
+                                </h2>
+                                <div class="contact_address_information">
+                                    <a href="tel:+91 9380967693" style="text-decoration: none;">
+                                        <div class="row details_designs_dir">
+                                            <div class="col-sm-2 details_left_side">
+                                                <p><i class="fa fa-phone"></i></p>
                                             </div>
-                                        </a>
-                                        <a href="mailto:admin@quantumberg.com" style="text-decoration: none;">
-                                            <div class="row details_designs_dir">
-                                                <div class="col-sm-2 details_left_side">
-                                                    <p><i class="fa fa-envelope"></i></p>
-                                                </div>
-                                                <div class="col-sm-10 details_right_side">
-                                                    <p>admin@quantumberg.com</p>
-                                                </div>
+                                            <div class="col-sm-10 details_right_side">
+                                                <p>+919108728053</p>
                                             </div>
-                                        </a>
-                                        <a href="https://maps.app.goo.gl/hQjzBozyjy32EtWt7"
-                                            style="text-decoration: none;" target="_blank">
-                                            <div class="row details_designs_dir">
-                                                <div class="col-sm-2 details_left_side">
-                                                    <p><i class="fa-solid fa-location-dot"></i></p>
-                                                </div>
-                                                <div class="col-sm-10 details_right_side">
-                                                    <p
-                                                        style="font-family:'Euclid Circular A Regular', sans-serif !important;">
-                                                        No.1376, 2nd floor, 13th Cross, Sarakki Main Rd, 1st Phase, J.
-                                                        P. Nagar, Bengaluru, Karnataka 560078</p>
-                                                </div>
+                                        </div>
+                                    </a>
+                                    <a href="mailto:admin@quantumberg.com" style="text-decoration: none;">
+                                        <div class="row details_designs_dir">
+                                            <div class="col-sm-2 details_left_side">
+                                                <p><i class="fa fa-envelope"></i></p>
                                             </div>
-                                        </a>
-                                    </div>
-                                    <div class="icons">
-                                        <a href="https://www.facebook.com/profile.php?id=100086201869292"
-                                            target="_blank" style="color: white;">
-                                            <i class="fa fa-facebook" style="font-size: 25px;">
-                                            </i>
-                                        </a>&nbsp;&nbsp;
-                                        <i class="fa fa-twitter" style="font-size: 25px;"></i>&nbsp;&nbsp;
-                                        <a href="https://www.linkedin.com/in/quantumberg-tech-166556252" target="_blank"
-                                            style="color: white;">
-                                            <i class="fa fa-linkedin-square" style="font-size: 25px;">
-                                            </i>
-                                        </a>
-                                    </div>
+                                            <div class="col-sm-10 details_right_side">
+                                                <p>admin@quantumberg.com</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="https://maps.app.goo.gl/hQjzBozyjy32EtWt7" style="text-decoration: none;" target="_blank">
+                                        <div class="row details_designs_dir">
+                                            <div class="col-sm-2 details_left_side">
+                                                <p><i class="fa-solid fa-location-dot"></i></p>
+                                            </div>
+                                            <div class="col-sm-10 details_right_side">
+                                                <p style="font-family:'Euclid Circular A Regular', sans-serif !important;">
+                                                    No.1376, 2nd floor, 13th Cross, Sarakki Main Rd, 1st Phase, J.
+                                                    P. Nagar, Bengaluru, Karnataka 560078</p>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
+                                <div class="icons">
+                                    <a href="https://www.facebook.com/profile.php?id=100086201869292" target="_blank" style="color: white;">
+                                        <i class="fa-brands fa-facebook-f" style="font-size: 25px;"></i>
+                                    </a>&nbsp;&nbsp;
+
+                                    <a href="#" target="_blank" style="color: white;">
+                                        <i class="fa-brands fa-twitter" style="font-size: 25px;"></i>
+                                    </a>&nbsp;&nbsp;
+
+                                    <a href="https://www.linkedin.com/in/quantumberg-tech-166556252" target="_blank" style="color: white;">
+                                        <i class="fa-brands fa-linkedin" style="font-size: 25px;"></i>
+                                    </a>&nbsp;&nbsp;
+                                </div>
+
                             </div>
-                            <div class="col-sm-6 col-lg-7">
-                                <div class="user_form">
-                                    <h4 class="mb"><b>Get In Touch</b></h4>
-                                    <p>We're always excited to explore new opportunities and challenges. Whether you're
-                                        a startup
-                                        or an established enterprise, we'd love to hear from you. Contact us to discuss
-                                        how we can
-                                        help you achieve your digital goals.
-                                    </p>
-                                    <form @submit.prevent="postData">
-                                        <input v-model="Name" type="text" placeholder="Name *" required
-                                            @blur="validateName">
-                                        <span v-if="nameError" class="error">{{ nameError }}</span>
+                        </div>
+                        <div class="col-sm-6 col-lg-7">
+                            <div class="user_form ">
+                                <h4 class="mb"><b>Get In Touch</b></h4>
+                                <p class="mt-2 mb-2">We're always excited to explore new opportunities and challenges. Whether you're
+                                    a startup
+                                    or an established enterprise, we'd love to hear from you. Contact us to discuss
+                                    how we can
+                                    help you achieve your digital goals.
+                                </p>
+                                <form @submit.prevent="postData">
+                                    <input v-model="Name" type="text" placeholder="Name *" required @blur="validateName">
+                                    <span v-if="nameError" class="error">{{ nameError }}</span>
 
-                                        <input v-model="Email" type="text" placeholder="Email *" required
-                                            @blur="validateEmail">
-                                        <span v-if="emailError" class="error">{{ emailError }}</span>
+                                    <input v-model="Email" type="text" placeholder="Email *" required @blur="validateEmail">
+                                    <span v-if="emailError" class="error">{{ emailError }}</span>
 
-                                        <input v-model="Phone" type="text" placeholder="Phone Number *" required
-                                            @blur="validatePhone">
-                                        <span v-if="phoneError" class="error">{{ phoneError }}</span>
+                                    <input v-model="Phone" type="text" placeholder="Phone Number *" required @blur="validatePhone">
+                                    <span v-if="phoneError" class="error">{{ phoneError }}</span>
 
-                                        <input v-model="How_found" type="text" placeholder="How Did You Find Us?">
+                                    <input v-model="How_found" type="text" placeholder="How Did You Find Us?">
+                                    <div class="input-group mb-2">
+                                        <select class="custom-select text-secondary" id="inputGroupSelect" v-model="Service">
+                                            <option disabled value="">Product Enquiry</option>
+                                            <option value="ERP Software">ERP Software</option>
+                                            <option value="HRMS Software">HRMS Software</option>
+                                            <option value="Education Software">Education Software</option>
+                                            <option value="Healthcare Software">Healthcare Software</option>
+                                            <option value="Billing Software">Billing Software</option>
+                                            <option value="E-Commerce Software">E-Commerce Software</option>
+                                            <option value="CRM Software">CRM Software</option>
+                                            <option value="Helpdesk Software">Helpdesk Software</option>
+                                            <option value="LMS Software">LMS Software</option>
+                                        </select>
+                                    </div>
 
-                                        <div class="input-group mb-2">
-                                            <select class="custom-select text-secondary" id="inputGroupSelect">
-                                                <option selected>Product Enquiry</option>
-                                                <option value="1">ERP Software</option>
-                                                <option value="2">HRMS Software</option>
-                                                <option value="3">Education Software</option>
-                                                <option value="4">Healthcare Software</option>
-                                                <option value="5">Billing Software</option>
-                                                <option value="6">E-Commerce Software</option>
-                                                <option value="7">CRM Software</option>
-                                                <option value="8">Helpdesk Software</option>
-                                                <option value="9">LMS Software</option>
-                                            </select>
-                                        </div>
+                                    <textarea class="form-control w-100" placeholder="Enquiry Message" v-model="Message" id="exampleFormControlTextarea1" cols="54" rows="5"></textarea>
 
-                                        <textarea class="form-control w-100" placeholder="Enquiry Message" name=""
-                                            id="exampleFormControlTextarea1" cols="54" rows="5"></textarea>
-
-                                        <div class="Button-sec">
-                                            <button type="submit" class="buttons mt-1">Send Message</button>
-                                        </div>
-                                    </form>
-                                    <p v-if="successMessage" style="text-align: center;color: green;">{{ successMessage
+                                    <div class="Button-sec">
+                                        <button type="submit" class="buttons mt-1">Send Message</button>
+                                    </div>
+                                </form>
+                                <p v-if="successMessage" style="text-align: center;color: green;">{{ successMessage
                                     }}</p>
-                                    <p v-if="errorMessage" style="text-align: center;color: red;">{{ errorMessage }}</p>
-                                </div>
+                                <p v-if="errorMessage" style="text-align: center;color: red;">{{ errorMessage }}</p>
                             </div>
                         </div>
                     </div>
@@ -123,34 +116,106 @@
             </div>
         </div>
     </div>
-    <Loading v-model:active="isLoading" loader="dots" :color="'#864391'" :width="100" :height="100"></Loading>
+</div>
+<Loading v-model:active="isLoading" loader="dots" :color="'#864391'" :width="100" :height="100"></Loading>
 </template>
 
 <script>
-
-
 export default {
     name: 'ContactUs',
-    components: {
-    },
     data() {
         return {
             Name: '',
             Email: '',
             Phone: '',
             How_found: '',
+            Service: '',
+            Message: '',
+            isLoading: false,
             successMessage: '',
             errorMessage: '',
-            isLoading: false,
             nameError: '',
             emailError: '',
             phoneError: ''
         };
     },
+    methods: {
+        validateName() {
+            this.nameError = this.Name ? '' : 'Name is required';
+        },
+        validateEmail() {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            this.emailError = emailRegex.test(this.Email) ? '' : 'Invalid email format';
+        },
+        validatePhone() {
+            const phoneRegex = /^[0-9]{10}$/;
+            this.phoneError = phoneRegex.test(this.Phone) ? '' : 'Invalid phone number';
+        },
+        async postData() {
+            // Run validations
+            this.validateName();
+            this.validateEmail();
+            this.validatePhone();
+
+            // Stop if validation fails
+            if (this.nameError || this.emailError || this.phoneError) {
+                return;
+            }
+
+            this.isLoading = true;
+
+            try {
+                // Prepare data as a plain object (not FormData)
+                const payload = {
+                    name: this.Name,
+                    mobile: this.Phone,
+                    email: this.Email,
+                    how_found: this.How_found || '',
+                    service: this.Service || '',
+                    message: this.Message || ''
+                };
+
+                // Submit via API call
+                const response = await fetch('/api/method/quantumberg_app.quantumberg_app.api.Contact.submit_contact', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(payload),
+                });
+
+                const result = await response.json();
+                console.log('Response:', result);
+
+                if (!response.ok) {
+                    this.errorMessage = result.message || 'Submission failed. Please check your input.';
+                    this.successMessage = '';
+                } else {
+                    this.successMessage = result.message || 'Form submitted successfully.';
+                    this.errorMessage = '';
+
+                    // Clear form
+                    this.Name = '';
+                    this.Email = '';
+                    this.Phone = '';
+                    this.How_found = '';
+                    this.Service = '';
+                    this.Message = '';
+                }
+
+            } catch (err) {
+                console.error('Error during contact submission:', err);
+                this.errorMessage = 'Something went wrong. Please try again.';
+                this.successMessage = '';
+            } finally {
+                this.isLoading = false;
+            }
+        }
+
+    }
 
 };
 </script>
-
 
 <style scoped>
 h1,

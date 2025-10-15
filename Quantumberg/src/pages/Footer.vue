@@ -9,9 +9,9 @@
                 </div>
 
                 <div class="col-sm-6 text-right footer_logo_sicon icons_designs">
-                    <a href="https://www.facebook.com/profile.php?id=100086201869292" target="_blank"><i class="fa fa-facebook" style="font-size: 25px;color:purple"></i></a>&nbsp;&nbsp;
-                    <a href="https://www.linkedin.com/company/quantumberg-technologies-pvt-ltd/mycompany/" target="_blank"><i class="fa fa-linkedin-square fa-3x" style="font-size: 25px;color:purple"></i></a>&nbsp;&nbsp;
-                    <i class="fa fa-twitter fa-3x" style="font-size: 25px;color:purple"></i>  
+                    <a href="https://www.facebook.com/profile.php?id=100086201869292" target="_blank"><i class="fa-brands fa-facebook-f" style="font-size: 25px;color:purple"></i></a>&nbsp;&nbsp;
+                    <a href="https://www.linkedin.com/company/quantumberg-technologies-pvt-ltd/mycompany/" target="_blank"><i class="fa-brands fa-linkedin" style="font-size: 25px;color:purple"></i></a>&nbsp;&nbsp;
+                    <i class="fa-brands fa-twitter" style="font-size: 25px;color:purple"></i>  
                     <!-- color: #08a0e9; -->
                 </div>
             </div>
@@ -46,7 +46,7 @@
                         <a href="https://maps.app.goo.gl/hQjzBozyjy32EtWt7" style="text-decoration: none;" target="blank">
                         <div class="row details_designs_dir">
                             <div classs="col-sm-2 details_left_side">
-                                <p><i class="material-icons">place</i></p>
+                                <p><i class="fa-solid fa-location-dot"></i></p>
                             </div>
                             <div class="col-sm-10 details_right_side">
                                 <address style="font-family:'Euclid Circular A Regular', sans-serif !important;">No.1376, 2nd floor, 13th Cross, Sarakki Main Rd, 1st Phase, J. P. Nagar, Bengaluru, Karnataka 560078</address>

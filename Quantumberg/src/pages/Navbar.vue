@@ -14,7 +14,7 @@
           </button>
         </div>
 
-        <!-- Menu Items -->
+        <!-- Desktop Menu -->
         <div class="hidden md:flex space-x-6 items-center">
           <router-link
             to="/"
@@ -44,6 +44,32 @@
           >
             Services
           </router-link>
+
+          <!-- Products Dropdown -->
+<li class="relative list-none" @click="toggleDropdown">
+            <div
+              class="flex items-center cursor-pointer nav-link"
+              :class="{ 'text-[#442060] font-bold': isActive('/Products') }"
+            >
+              Products
+            </div>
+            <ul
+              v-show="isDropdownOpen"
+              class="absolute left-0 top-full mt-2 w-56 bg-white shadow-lg z-10"
+              @click.stop
+            >
+              <li><router-link to="/ERPSoftware" class="dropdown-item block px-4 py-2 hover:bg-gray-100" @click="closeDropdown"><i class="fas fa-globe mr-2"></i>ERP Software</router-link></li>
+              <li><router-link to="/HRMSSoftware" class="dropdown-item block px-4 py-2 hover:bg-gray-100" @click="closeDropdown"><i class="fas fa-desktop mr-2"></i>HRMS Software</router-link></li>
+              <li><router-link to="/EducationSoftware" class="dropdown-item block px-4 py-2 hover:bg-gray-100" @click="closeDropdown"><i class="fas fa-graduation-cap mr-2"></i>Education Software</router-link></li>
+              <li><router-link to="/HealthcareSoftware" class="dropdown-item block px-4 py-2 hover:bg-gray-100" @click="closeDropdown"><i class="fas fa-heartbeat mr-2"></i>Healthcare Software</router-link></li>
+              <li><router-link to="/BillingSoftware" class="dropdown-item block px-4 py-2 hover:bg-gray-100" @click="closeDropdown"><i class="fas fa-file-invoice-dollar mr-2"></i>Billing Software</router-link></li>
+              <li><router-link to="/ECommerceSoftware" class="dropdown-item block px-4 py-2 hover:bg-gray-100" @click="closeDropdown"><i class="fas fa-shopping-cart mr-2"></i>E-Commerce Software</router-link></li>
+              <li><router-link to="/CRMSoftware" class="dropdown-item block px-4 py-2 hover:bg-gray-100" @click="closeDropdown"><i class="fas fa-cogs mr-2"></i>CRM Software</router-link></li>
+              <li><router-link to="/HelpdeskSoftware" class="dropdown-item block px-4 py-2 hover:bg-gray-100" @click="closeDropdown"><i class="fas fa-headset mr-2"></i>Helpdesk Software</router-link></li>
+              <li><router-link to="/LMSSoftware" class="dropdown-item block px-4 py-2 hover:bg-gray-100" @click="closeDropdown"><i class="fas fa-chalkboard-teacher mr-2"></i>LMS Software</router-link></li>
+            </ul>
+          </li>
+
           <router-link
             to="/Pricing"
             class="nav-link"
@@ -58,6 +84,9 @@
           >
             Contact Us
           </router-link>
+          <a href="http://127.0.0.1:8000/login" class="nav-link text-[#442060] font-bold">
+            Login
+          </a>
         </div>
       </div>
     </div>
@@ -122,6 +151,7 @@ export default {
   data() {
     return {
       menuOpen: false,
+      isDropdownOpen: false,
     };
   },
   methods: {
@@ -131,15 +161,38 @@ export default {
     closeMenu() {
       this.menuOpen = false;
     },
+    toggleDropdown() {
+      this.isDropdownOpen = !this.isDropdownOpen;
+    },
+    closeDropdown() {
+      this.isDropdownOpen = false;
+    },
     isActive(...routes) {
       return routes.includes(this.$route.path);
     },
+    handleClickOutside(event) {
+      const dropdown = this.$el.querySelector('.relative');
+      if (dropdown && !dropdown.contains(event.target)) {
+        this.isDropdownOpen = false;
+      }
+    },
+  },
+  mounted() {
+    document.addEventListener('click', this.handleClickOutside);
+  },
+  beforeUnmount() {
+    document.removeEventListener('click', this.handleClickOutside);
   },
 };
 </script>
 
 <style scoped>
 .nav-link {
-  @apply text-gray-600 text-base font-medium hover:text-[#442060] transition-colors duration-200;
+  @apply text-gray-600 text-base font-medium hover:text-[#442060] transition-colors duration-200 cursor-pointer;
+}
+.dropdown-item {
+  color: #442060;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 600;
 }
 </style>
